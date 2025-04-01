@@ -25,7 +25,8 @@ import { ContentComponent } from './pages/content/content.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContentComponent,
   ],
   providers: [
     provideClientHydration(withEventReplay())
