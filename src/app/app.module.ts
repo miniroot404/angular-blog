@@ -7,7 +7,6 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { MenuTitleComponent } from './components/menu-title/menu-title.component';
 import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
-import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 
@@ -19,13 +18,12 @@ import { ContentComponent } from './pages/content/content.component';
     MenuTitleComponent,
     BigCardComponent,
     SmallCardComponent,
-    PagesComponent,
-    HomeComponent,
-    ContentComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContentComponent
   ],
   providers: [
     provideClientHydration(withEventReplay())
